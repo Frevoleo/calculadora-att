@@ -36,7 +36,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $resultado = $calculo->divisao($num1, $num2);
         break;
         default:
-        echo "ué";
         exit("Erro ao selecionar operador");
     }
     echo "O resultado é ". $resultado;
