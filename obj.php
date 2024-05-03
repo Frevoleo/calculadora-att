@@ -13,8 +13,7 @@ class Calculadora{
         if($Numero1 != 0 && $Numero2 != 0){
         return $Numero1 / $Numero2;
         } else {
-            echo "sou uma calculadora que não fez calculo 2 na faculdade para dividir por 0";
-            exit;
+            exit("Não é possivel dividir por 0");
         }
     }
 }
@@ -38,7 +37,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         break;
         default:
         echo "ué";
-        exit;
+        exit("Erro ao selecionar operador");
     }
     echo "O resultado é ". $resultado;
 }
